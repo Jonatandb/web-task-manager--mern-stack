@@ -2,7 +2,7 @@
 
 ---
 
-## Playlist en el canal de Luis Cabrera -> [Youtube](https://www.youtube.com/playlist?list=PLdcAPGja1uw0LSn7kx-Plj76x8UZZLgz9)
+## Playlist en el canal de [Luis Cabrera](https://www.youtube.com/c/LuisCabrera/videos) -> [Youtube](https://www.youtube.com/playlist?list=PLdcAPGja1uw0LSn7kx-Plj76x8UZZLgz9)
 
 ---
 
