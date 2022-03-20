@@ -16,7 +16,7 @@ export default function Navigation() {
           <Nav.Link as={NavLink} to={routes.projects}>
             Proyectos
           </Nav.Link>
-          <NavDropdown title='Admin' active={pathname === '/admin/users'}>
+          <NavDropdown title='Admin' active={pathname === routes.admin.users}>
             <NavDropdown.Item as={NavLink} to={routes.admin.users}>
               Usuarios
             </NavDropdown.Item>

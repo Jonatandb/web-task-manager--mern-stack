@@ -3,6 +3,7 @@ import { Navigate } from 'react-router-dom'
 import useAuth from '../auth/useAuth'
 
 export default function PublicRoute({ children }) {
-  const { user } = useAuth()
-  return user ? <Navigate to='/projects' /> : children
+  const { isLogged } = useAuth()
+
+  return isLogged() ? <Navigate to='/projects' /> : children
 }
