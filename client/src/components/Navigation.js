@@ -1,9 +1,11 @@
 import React from 'react'
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import { NavLink, useLocation } from 'react-router-dom'
+import useAuth from '../auth/useAuth'
 import routes from '../helpers/routes'
 
 export default function Navigation() {
+  const { logout } = useAuth()
   const pathname = useLocation().pathname || ''
   return (
     <Navbar collapseOnSelect expand='lg' variant='dark' bg='dark'>
@@ -31,6 +33,9 @@ export default function Navigation() {
           </Nav.Link>
           <Nav.Link as={NavLink} to={routes.account}>
             Mi cuenta
+          </Nav.Link>
+          <Nav.Link to={routes.account} onClick={logout}>
+            Cerrar Sesión
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
