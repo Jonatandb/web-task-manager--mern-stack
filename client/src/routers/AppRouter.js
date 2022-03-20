@@ -1,16 +1,17 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Layout from '../components/layouts/Layout'
-import AccountPage from '../pages/AccountPage'
-import UsersPage from '../pages/admin/UsersPage'
 import HomePage from '../pages/HomePage'
 import LoginPage from '../pages/LoginPage'
-import NotFoundPage from '../pages/NotFoundPage'
+import RegisterPage from '../pages/RegisterPage'
+import AccountPage from '../pages/AccountPage'
 import ProjectPage from '../pages/ProjectPage'
 import ProjectsPage from '../pages/ProjectsPage'
-import RegisterPage from '../pages/RegisterPage'
-import PrivateRoute from './PrivateRoute'
+import UsersPage from '../pages/admin/UsersPage'
+import NotFoundPage from '../pages/NotFoundPage'
 import PublicRoute from './PublicRoute'
+import PrivateRoute from './PrivateRoute'
+import roles from '../helpers/roles'
 
 export default function AppRouter() {
   return (
@@ -75,7 +76,7 @@ export default function AppRouter() {
             exact
             path='/admin/users'
             element={
-              <PrivateRoute hasRole='admin'>
+              <PrivateRoute hasRole={roles.admin}>
                 <UsersPage />
               </PrivateRoute>
             }
