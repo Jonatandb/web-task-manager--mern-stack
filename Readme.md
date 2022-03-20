@@ -52,3 +52,11 @@
 ### Sitios investigados
 
 - [Attempted import error: 'Switch' is not exported from 'react-router-dom'](https://stackoverflow.com/questions/63124161/attempted-import-error-switch-is-not-exported-from-react-router-dom)
+
+- [ml-auto is not pushing navbar links to the right](https://stackoverflow.com/questions/49022773/ml-auto-is-not-pushing-navbar-links-to-the-right)
+
+- [https://getbootstrap.com/docs/5.1/migration/#utilities](https://getbootstrap.com/docs/5.1/migration/#utilities)
+
+- [React Router v4 - How to get current route?](https://stackoverflow.com/questions/42253277/react-router-v4-how-to-get-current-route)
+
+- [How to get the current URL and pathname in React](https://surajsharma.net/blog/current-url-in-react)
