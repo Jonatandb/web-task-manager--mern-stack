@@ -60,3 +60,5 @@
 - [React Router v4 - How to get current route?](https://stackoverflow.com/questions/42253277/react-router-v4-how-to-get-current-route)
 
 - [How to get the current URL and pathname in React](https://surajsharma.net/blog/current-url-in-react)
+
+- [Error: [PrivateRoute] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>](https://stackoverflow.com/questions/69864165/error-privateroute-is-not-a-route-component-all-component-children-of-rou)
