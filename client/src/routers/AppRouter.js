@@ -12,6 +12,7 @@ import NotFoundPage from '../pages/NotFoundPage'
 import PublicRoute from './PublicRoute'
 import PrivateRoute from './PrivateRoute'
 import roles from '../helpers/roles'
+import routes from '../helpers/routes'
 
 export default function AppRouter() {
   return (
@@ -20,7 +21,7 @@ export default function AppRouter() {
         <Routes>
           <Route
             exact
-            path='/'
+            path={routes.home}
             element={
               <PublicRoute>
                 <HomePage />
@@ -29,7 +30,7 @@ export default function AppRouter() {
           />
           <Route
             exact
-            path='/login'
+            path={routes.login}
             element={
               <PublicRoute>
                 <LoginPage />
@@ -38,7 +39,7 @@ export default function AppRouter() {
           />
           <Route
             exact
-            path='/register'
+            path={routes.register}
             element={
               <PublicRoute>
                 <RegisterPage />
@@ -47,7 +48,7 @@ export default function AppRouter() {
           />
           <Route
             exact
-            path='/account'
+            path={routes.account}
             element={
               <PrivateRoute>
                 <AccountPage />
@@ -56,7 +57,7 @@ export default function AppRouter() {
           ></Route>
           <Route
             exact
-            path='/projects'
+            path={routes.projects}
             element={
               <PrivateRoute>
                 <ProjectsPage />
@@ -65,7 +66,7 @@ export default function AppRouter() {
           />
           <Route
             exact
-            path='/project/:projectId'
+            path={routes.project()}
             element={
               <PrivateRoute>
                 <ProjectPage />
@@ -74,7 +75,7 @@ export default function AppRouter() {
           />
           <Route
             exact
-            path='/admin/users'
+            path={routes.admin.users}
             element={
               <PrivateRoute hasRole={roles.admin}>
                 <UsersPage />
