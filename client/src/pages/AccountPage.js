@@ -1,5 +1,5 @@
 import React from 'react'
 
 export default function AccountPage() {
-  return <div>AccountPage</div>
+  return <h1>AccountPage</h1>
 }

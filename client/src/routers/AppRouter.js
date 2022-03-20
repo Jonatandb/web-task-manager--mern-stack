@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Layout from '../components/layouts/Layout'
 import AccountPage from '../pages/AccountPage'
 import UsersPage from '../pages/admin/UsersPage'
 import HomePage from '../pages/HomePage'
@@ -12,17 +13,19 @@ import RegisterPage from '../pages/RegisterPage'
 export default function AppRouter() {
   return (
     <Router>
-      <Routes>
-        <Route exact path='/' element={<HomePage />} />
-        <Route exact path='/login' element={<LoginPage />} />
-        <Route exact path='/register' element={<RegisterPage />} />
-        <Route exact path='/account' element={<AccountPage />} />
-        <Route exact path='/projects' element={<ProjectsPage />} />
-        <Route exact path='/project/:projectId' element={<ProjectPage />} />
-        <Route exact path='/admin/users' element={<UsersPage />} />
+      <Layout>
+        <Routes>
+          <Route exact path='/' element={<HomePage />} />
+          <Route exact path='/login' element={<LoginPage />} />
+          <Route exact path='/register' element={<RegisterPage />} />
+          <Route exact path='/account' element={<AccountPage />} />
+          <Route exact path='/projects' element={<ProjectsPage />} />
+          <Route exact path='/project/:projectId' element={<ProjectPage />} />
+          <Route exact path='/admin/users' element={<UsersPage />} />
 
-        <Route path='*' element={<NotFoundPage />} />
-      </Routes>
+          <Route path='*' element={<NotFoundPage />} />
+        </Routes>
+      </Layout>
     </Router>
   )
 }
