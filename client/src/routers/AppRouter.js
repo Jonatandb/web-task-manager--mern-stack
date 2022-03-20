@@ -10,15 +10,40 @@ import ProjectPage from '../pages/ProjectPage'
 import ProjectsPage from '../pages/ProjectsPage'
 import RegisterPage from '../pages/RegisterPage'
 import PrivateRoute from './PrivateRoute'
+import PublicRoute from './PublicRoute'
 
 export default function AppRouter() {
   return (
     <Router>
       <Layout>
         <Routes>
-          <Route exact path='/' element={<HomePage />} />
-          <Route exact path='/login' element={<LoginPage />} />
-          <Route exact path='/register' element={<RegisterPage />} />
+          <Route
+            exact
+            path='/'
+            element={
+              <PublicRoute>
+                <HomePage />
+              </PublicRoute>
+            }
+          />
+          <Route
+            exact
+            path='/login'
+            element={
+              <PublicRoute>
+                <LoginPage />
+              </PublicRoute>
+            }
+          />
+          <Route
+            exact
+            path='/register'
+            element={
+              <PublicRoute>
+                <RegisterPage />
+              </PublicRoute>
+            }
+          />
           <Route
             exact
             path='/account'
