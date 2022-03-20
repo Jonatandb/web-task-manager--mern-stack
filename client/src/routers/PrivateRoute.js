@@ -1,7 +1,8 @@
 import React from 'react'
 import { Navigate } from 'react-router-dom'
+import useAuth from '../auth/useAuth'
 
 export default function PrivateRoute({ children }) {
-  const user = { id: 1, role: 'regular' }
-  return user ? children : <Navigate to='/' />
+  const { user } = useAuth()
+  return user ? children : <Navigate to='/login' />
 }
