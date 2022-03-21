@@ -9,7 +9,7 @@ export default function AuthProvider({ children }) {
   const [user, setUser] = useState(null)
   const navigate = useNavigate()
   const login = (userCredentials, fromLocation) => {
-    setUser({ id: 1, role: roles.admin })
+    setUser({ id: 1, role: roles.admin, name: 'Jonatandb', email: 'jonatandb@gmail.com' })
     if (fromLocation) navigate(fromLocation, { replace: true })
   }
 
