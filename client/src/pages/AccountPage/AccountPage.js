@@ -1,12 +1,12 @@
 import { Card, Col, Container, Row, Button } from 'react-bootstrap'
-import useAuth from '../auth/useAuth'
+import useAuth from '../../auth/useAuth'
 
 export default function AccountPage() {
   const { user } = useAuth()
   return (
     <Container>
       <Row>
-        <Col xs={12} className='text-center'>
+        <Col xs={12} className='mt-3 text-center'>
           <img
             src='/img/male_avatar.svg'
             alt='profile'
