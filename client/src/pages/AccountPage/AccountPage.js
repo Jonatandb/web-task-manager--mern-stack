@@ -14,7 +14,7 @@ export default function AccountPage() {
           />
         </Col>
         <Col className='mt-4'>
-          <Card>
+          <Card style={{ maxWidth: '360px' }} className='mx-auto p-4'>
             <p className='text-center'>
               <b>Nombre: </b>
               {user.name}
