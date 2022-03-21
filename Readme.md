@@ -61,4 +61,10 @@
 
 - [How to get the current URL and pathname in React](https://surajsharma.net/blog/current-url-in-react)
 
-- [Error: [PrivateRoute] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>](https://stackoverflow.com/questions/69864165/error-privateroute-is-not-a-route-component-all-component-children-of-rou)
+- [Error: [PrivateRoute] is not a `<Route>` component. All component children of `<Routes>` must be a `<Route>` or `<React.Fragment>`](https://stackoverflow.com/questions/69864165/error-privateroute-is-not-a-route-component-all-component-children-of-rou)
+
+- [React Router Dom: `<Navigate>`](https://reactrouter.com/docs/en/v6/api#navigate)
+
+- [React-router Auth Example](https://stackblitz.com/github/remix-run/react-router/tree/main/examples/auth?file=src/App.tsx)
+
+- [React Router Dom: `<useNavigate>`](https://reactrouter.com/docs/en/v6/api#usenavigate)
