@@ -6,10 +6,12 @@
 
 ---
 
+## ![Gestor de tareas](Screenshot.png?raw=true 'Gestor de tareas')
+
 ### Secciones:
 
 - Iniciar sesión / Registrarse
-- Cuenta
+- Mi cuenta
   - Edición de datos personales
   - Cambio de foto de perfil
   - Eliminación de la cuenta
