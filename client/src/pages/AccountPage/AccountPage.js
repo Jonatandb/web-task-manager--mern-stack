@@ -1,13 +1,15 @@
-import { useState } from 'react'
 import { Card, Col, Container, Row, Button } from 'react-bootstrap'
 import useAuth from '../../auth/useAuth'
+import useModal from '../../hooks/useModal'
+import ChangePasswordModal from './components/ChangePasswordModal'
 import DeleteModal from './components/DeleteModal'
 
 export default function AccountPage() {
   const { user } = useAuth()
-  const [isOpenDeleteModal, setIsOpenDeleteModal] = useState(false)
-  const openDeleteModal = () => setIsOpenDeleteModal(true)
-  const closeDeleteModal = () => setIsOpenDeleteModal(false)
+  const [isOpenDeleteModal, openDeleteModal, closeDeleteModal] = useModal(false)
+  const [isOpenChangePassswordModal, openChangePassswordModal, closeChangePassswordModal] =
+    useModal(false)
+
   return (
     <>
       <Container>
@@ -34,7 +36,7 @@ export default function AccountPage() {
                 {user.role}
               </p>
               <Button variant='warning'>Editar cuenta</Button>
-              <Button variant='link' className='mt-1'>
+              <Button variant='link' className='mt-1' onClick={openChangePassswordModal}>
                 Cambiar contraseña
               </Button>
               <Button variant='link' className='mt-3 text-danger' onClick={openDeleteModal}>
@@ -45,6 +47,7 @@ export default function AccountPage() {
         </Row>
       </Container>
       <DeleteModal isOpen={isOpenDeleteModal} close={closeDeleteModal} />
+      <ChangePasswordModal isOpen={isOpenChangePassswordModal} close={closeChangePassswordModal} />
     </>
   )
 }

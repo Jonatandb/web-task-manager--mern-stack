@@ -48,6 +48,8 @@
 - JSON Web Token
 - Create React App
 - Bootstrap
+- React-hook-form
+- Yup
 
 ---
 
