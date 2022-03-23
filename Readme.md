@@ -6,7 +6,11 @@
 
 ---
 
-## ![Gestor de tareas](Screenshot.png?raw=true 'Gestor de tareas')
+## ![Gestor de tareas -> Inicio](Screenshot.png?raw=true 'Gestor de tareas -> Inicio')
+
+## ![Gestor de tareas -> Cuenta](Screenshot_account.png?raw=true 'Gestor de tareas -> Cuenta')
+
+## ![Gestor de tareas -> Cuenta -> Cambiar foto de perfil](Screenshot_account_02.png?raw=true 'Gestor de tareas -> Cuenta -> Cambiar foto de perfil')
 
 ### Secciones:
 
@@ -41,16 +45,16 @@
 
 ### Tecnologías:
 
-- MongoDB
-- Express
-- React + React hooks
-- NodeJs
-- JSON Web Token
-- Create React App
-- Bootstrap
-- React-hook-form
-- Yup
-- React-toastify
+- [MongoDB](https://www.mongodb.com/es)
+- [Express](https://expressjs.com/es/)
+- [React + React hooks](https://es.reactjs.org/)
+- [NodeJs](https://nodejs.org/es/)
+- [JSON Web Token](https://jwt.io/)
+- [Create React App](https://create-react-app.dev/)
+- [Bootstrap 5](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+- [React-hook-form](https://react-hook-form.com/)
+- [Yup](https://github.com/jquense/yup)
+- [React-toastify](https://fkhadra.github.io/react-toastify/introduction)
 
 ---
 
@@ -75,3 +79,11 @@
 - [React Router Dom: `<useNavigate>`](https://reactrouter.com/docs/en/v6/api#usenavigate)
 
 - [React Bootstrap 5 - Spacing](https://mdbootstrap.com/docs/b5/react/utilities/spacing/)
+
+- [React Bootstrap — Form Controls](https://blog.devgenius.io/react-bootstrap-form-controls-f073ed4e8b75)
+
+- [React-Bootstrap Form.File and bs-custom-file-input. Can't get label to change](https://stackoverflow.com/questions/64076013/react-bootstrap-form-file-and-bs-custom-file-input-cant-get-label-to-change)
+
+- [React Bootstrap 5 - Form Controls - File input](https://react-bootstrap.github.io/forms/form-control/#file-input)
+
+- [React-toastify](https://fkhadra.github.io/react-toastify/introduction/)
