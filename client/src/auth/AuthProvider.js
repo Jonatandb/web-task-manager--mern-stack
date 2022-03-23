@@ -8,6 +8,7 @@ export const AuthContext = createContext()
 export default function AuthProvider({ children }) {
   const [user, setUser] = useState(null)
   const navigate = useNavigate()
+
   const login = (userCredentials, fromLocation) => {
     setUser({ id: 1, role: roles.admin, name: 'Jonatandb', email: 'jonatandb@gmail.com' })
     if (fromLocation) navigate(fromLocation, { replace: true })
@@ -17,6 +18,9 @@ export default function AuthProvider({ children }) {
 
   const isLogged = () => !!user
 
+  const updateUser = data => {
+    setUser({ ...user, ...data })
+  }
   const hasRole = role => {
     return role && user?.role === role
   }
@@ -27,6 +31,7 @@ export default function AuthProvider({ children }) {
     hasRole,
     login,
     logout,
+    updateUser,
   }
 
   return <AuthContext.Provider value={contextValue}>{children}</AuthContext.Provider>

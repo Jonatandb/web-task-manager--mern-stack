@@ -3,12 +3,14 @@ import useAuth from '../../auth/useAuth'
 import useModal from '../../hooks/useModal'
 import ChangePasswordModal from './components/ChangePasswordModal'
 import DeleteModal from './components/DeleteModal'
+import EditModal from './components/EditModal'
 
 export default function AccountPage() {
   const { user } = useAuth()
   const [isOpenDeleteModal, openDeleteModal, closeDeleteModal] = useModal(false)
   const [isOpenChangePassswordModal, openChangePassswordModal, closeChangePassswordModal] =
     useModal(false)
+  const [isOpenEditModal, openEditModal, closeEditModal] = useModal(false)
 
   return (
     <>
@@ -35,7 +37,9 @@ export default function AccountPage() {
                 <b>Rol: </b>
                 {user.role}
               </p>
-              <Button variant='warning'>Editar cuenta</Button>
+              <Button variant='warning' onClick={openEditModal}>
+                Editar cuenta
+              </Button>
               <Button variant='link' className='mt-1' onClick={openChangePassswordModal}>
                 Cambiar contraseña
               </Button>
@@ -48,6 +52,7 @@ export default function AccountPage() {
       </Container>
       <DeleteModal isOpen={isOpenDeleteModal} close={closeDeleteModal} />
       <ChangePasswordModal isOpen={isOpenChangePassswordModal} close={closeChangePassswordModal} />
+      <EditModal user={user} isOpen={isOpenEditModal} close={closeEditModal} />
     </>
   )
 }
