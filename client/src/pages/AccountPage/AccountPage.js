@@ -4,6 +4,7 @@ import useModal from '../../hooks/useModal'
 import ChangePasswordModal from './components/ChangePasswordModal'
 import DeleteModal from './components/DeleteModal'
 import EditModal from './components/EditModal'
+import ProfilePicModal from './components/ProfilePicModal'
 
 export default function AccountPage() {
   const { user } = useAuth()
@@ -11,6 +12,7 @@ export default function AccountPage() {
   const [isOpenChangePassswordModal, openChangePassswordModal, closeChangePassswordModal] =
     useModal(false)
   const [isOpenEditModal, openEditModal, closeEditModal] = useModal(false)
+  const [isOpenProfilePicModal, openProfilePicModal, closeProfilePicModal] = useModal(false)
 
   return (
     <>
@@ -18,9 +20,16 @@ export default function AccountPage() {
         <Row>
           <Col xs={12} className='mt-3 text-center'>
             <img
-              src='/img/male_avatar.svg'
+              src={user?.profilePic || '/img/male_avatar.svg'}
               alt='profile'
-              style={{ width: '200px', height: '200px', borderRadius: '50%', objectFit: 'cover' }}
+              style={{
+                width: '200px',
+                height: '200px',
+                borderRadius: '50%',
+                objectFit: 'cover',
+                cursor: 'pointer',
+              }}
+              onClick={openProfilePicModal}
             />
           </Col>
           <Col className='mt-4'>
@@ -53,6 +62,7 @@ export default function AccountPage() {
       <DeleteModal isOpen={isOpenDeleteModal} close={closeDeleteModal} />
       <ChangePasswordModal isOpen={isOpenChangePassswordModal} close={closeChangePassswordModal} />
       <EditModal user={user} isOpen={isOpenEditModal} close={closeEditModal} />
+      <ProfilePicModal user={user} isOpen={isOpenProfilePicModal} close={closeProfilePicModal} />
     </>
   )
 }

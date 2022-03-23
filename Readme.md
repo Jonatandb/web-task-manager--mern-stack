@@ -50,6 +50,7 @@
 - Bootstrap
 - React-hook-form
 - Yup
+- React-toastify
 
 ---
 
