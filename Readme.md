@@ -2,7 +2,7 @@
 
 ---
 
-## [Playlist](https://www.youtube.com/playlist?list=PLdcAPGja1uw0LSn7kx-Plj76x8UZZLgz9) en [el canal de Youtube](https://www.youtube.com/c/LuisCabrera/videos) de Luis Cabrera.
+## [Playlist](https://www.youtube.com/playlist?list=PLdcAPGja1uw0LSn7kx-Plj76x8UZZLgz9) en [el canal de Youtube](https://www.youtube.com/c/LuisCabrera/videos) de [Luis Cabrera](https://luismiguelcabrera.github.io/#). ([Github](https://github.com/luismcabrera/simple-mern-app-with-authentication-client))
 
 ---
 
